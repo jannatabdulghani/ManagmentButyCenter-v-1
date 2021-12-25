@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="ar">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <!--custom css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>إدارة مراكز تجميل</title>
+  </head>
+  <body>
+   
+ <!--header-->
+ <header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+    <a class="navbar-brand" href="index.html">
+      <div class="logo" >
+        <div class="logo_content1">ادارة  </div>
+       <div class="logo_content2"> مراكز </div>
+       <div class="logo_content3">  تجميل</div>
+     </div>
+     </a>
+    <div class="container">
+       
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">الرئيسة</a>
+            </li>
+            <li class="nav-item">
+              <select class="form-select salons" id="nameOfSalons" aria-label="Default select example">
+                <option value="index.html" selected>تصفح</option>
+                <option value="salon1.html">صالون الأمل</option>
+                <option value="salon2.html">صالون الحياة</option>
+                
+              </select>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="coza_store/index.html">تسوق</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="request.html">طلب تجربة البرنامج</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="blog.html">مدونتي</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">البرنامج</a>
+            </li>
+            
+           
+          </ul>
+          <div class="icons">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          </div>
+          <a class=""  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <i class="fa fa-bars link-light" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+  </nav>
+   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/img/backgrounds/back2.png" class="img img2 d-block w-100" alt="...">
+        <div class="overlay">
+          <div class="carousel-caption d-none d-md-block">
+          
+            <h5 class="salonName"> ....صالون الحياة</h5>
+            <p class="salonDesc">من المنزل يمكنك الحجز ومعرفتك بكااافة التفاصيل</p>
+            
+          </div>
+        </div>
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header ">
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <h5 class="offcanvasRightLabel" id="offcanvasRightLabel">ادارة مراكز تجميل</h5>
+    </div>
+    <div class="offcanvas-body">
+    <div class="content">
+      <a class="nav-link active" aria-current="page" href="index.html">الرئيسة</a>
+      <a class="nav-link active" aria-current="page" href="request.html">طلب تجربة البرنامج</a>
+      <a class="nav-link active" aria-current="page" href="blog.html">مدونتي</a>
+      <a class="nav-link active" aria-current="page" href="help.html">البرنامج</a>
+      <a class="nav-link active" aria-current="page" href="coza_store/index.html">تسوق</a>
+      <p class="desc">@ادارة مراكز تجميل</p>
+    </div>
+    <div class="offcanvas-img">
+      <div><img src="assets/img/products/product-01.webp" alt="clothes product1" width="100px" height="100px" srcset=""></div>
+      <div><img src="assets/img/products/product-02.webp" alt="clothes product2" width="100px"  height="100px"  srcset=""></div>
+      <div><img src="assets/img/products/product-04.webp" alt="clothes product3" width="100px"  height="100px" srcset=""></div>
+      <div><img src="assets/img/products/product-14.webp" alt="clothes product4" width="100px" height="100px" srcset=""></div>
+      <div><img src="assets/img/products/product-06.webp" alt="clothes product5" width="100px"  height="100px"  srcset=""></div>
+      <div><img src="assets/img/products/product-12.webp" alt="clothes product6" width="100px"  height="100px" srcset=""></div>
+      <div><img src="assets/img/products/product-07.webp" alt="clothes product7" width="100px" height="100px" srcset=""></div>
+      <div><img src="assets/img/products/product-15.webp" alt="clothes product8" width="100px"  height="100px"  srcset=""></div>
+      <div><img src="assets/img/products/product-09.webp" alt="clothes product9" width="100px"  height="100px" srcset=""></div>
+    </div>
+    <div class="offcanvas-about ">
+      <h6 class="offcanvasRightLabel" id="offcanvasRightLabel">:*ح*و*ل*</h6>
+      
+      <p class="about-desc">ان البرنامج يحتوي على نظام حجوزات متطور, سهل الاستخدام, مع جدول زمني واضح والذي سيغطي جميع احتياجاتك لجدولة المواعيد او السلع الشرائية</p>
+    </div>
+    </div>
+    
+  </div>
+  
+ </header>
+ <body>
+   <!--PRODUCT OVERVIEW Section-->
+ <section class="overview py-5" id="overview">
+  <div class="container">
+     <h2>نظرة عامة على المنتج</h2>
+<div class="row justify-content-between flex-row-reverse">
+
+ <div class="col-lg-10 text-center">
+  <nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <button class="nav-link active" id="nav-Hairstyles-tab" data-bs-toggle="tab" data-bs-target="#nav-Hairstyles" type="button" role="tab" aria-controls="nav-Hairstyles" aria-selected="true">تساريح</button>
+    <button class="nav-link" id="nav-hairCuts-tab" data-bs-toggle="tab" data-bs-target="#nav-hairCuts" type="button" role="tab" aria-controls="nav-hairCuts" aria-selected="false">قصات شعر</button>
+    <button class="nav-link" id="nav-HairDyes-tab" data-bs-toggle="tab" data-bs-target="#nav-HairDyes" type="button" role="tab" aria-controls="nav-HairDyes" aria-selected="false">  صبغات شعر</button>
+    <button class="nav-link" id="nav-shawlRolls-tab" data-bs-toggle="tab" data-bs-target="#nav-shawlRolls" type="button" role="tab" aria-controls="nav-shawlRolls" aria-selected="false">لفات شالات</button>
+    <button class="nav-link" id="nav-makeup-tab" data-bs-toggle="tab" data-bs-target="#nav-makeup" type="button" role="tab" aria-controls="nav-makeup" aria-selected="false">مكياج</button>
+    <button class="nav-link" id="nav-ManicuresAndNails-tab" data-bs-toggle="tab" data-bs-target="#nav-ManicuresAndNails" type="button" role="tab" aria-controls="nav-ManicuresAndNails" aria-selected="false">مناكير وأظافر</button>
+    <button class="nav-link" id="nav-FaceAndEyebrowCleaning-tab" data-bs-toggle="tab" data-bs-target="#nav-FaceAndEyebrowCleaning" type="button" role="tab" aria-controls="nav-FaceAndEyebrowCleaning" aria-selected="false">تنظيف وجه وحواجب</button>
+
+  </div>
+  </nav>
+ </div>
+ 
+ 
+ <div class="tab-content mt-5" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-Hairstyles" role="tabpanel" aria-labelledby="nav-Hairstyles-tab">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-lg-3 mb-3">
+          <img src="assets/img/salon2/Hairstyles/img1.jpg" alt="">
+        </div>
+        <div class="col-lg-3">
+          <img src="assets/img/salon2/Hairstyles/img2.jpg" alt="">
+        </div>
+        <div class="col-lg-3">
+          <img src="assets/img/salon2/Hairstyles/img3.jpg" alt="">
+        </div>
+        <div class="col-lg-3">
+          <img src="assets/img/salon2/Hairstyles/img4.jpg" alt="">
+        </div>
+        <div class="col-lg-3 mb-3">
+          <img src="assets/img/salon2/Hairstyles/img5.jpg" alt="">
+        </div>
+        <div class="col-lg-3">
+          <img src="assets/img/salon2/Hairstyles/img6.jpg" alt="">
+        </div>
+        <div class="col-lg-3">
+            <img src="assets/img/salon2/Hairstyles/img7.jpg" alt="">
+          </div>
+          <div class="col-lg-3">
+            <img src="assets/img/salon2/Hairstyles/img8.jpg" alt="">
+          </div>
+          <div class="col-lg-3">
+            <img src="assets/img/salon2/Hairstyles/img9.jpg" alt="">
+          </div>
+          <div class="col-lg-3">
+            <img src="assets/img/salon2/Hairstyles/img10.jpg" alt="">
+          </div>
+          <div class="col-lg-3">
+            <img src="assets/img/salon2/Hairstyles/img11.jpg" alt="">
+          </div>
+          <div class="col-lg-3">
+            <img src="assets/img/salon2/Hairstyles/img12.jpg" alt="">
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="nav-hairCuts" role="tabpanel" aria-labelledby="nav-hairCuts-tab">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-lg-3 mb-3">
+          <img src="assets/img/salon2/hairCuts/img1.jpg" alt="">
+        </div>
+        <div class="col-lg-3">
+          <img src="assets/img/salon2/hairCuts/img2.jpg" alt="">
+        </div>
+        
+        <div class="col-lg-3">
+          <img src="assets/img/salon2/hairCuts/img3.jpg" alt="">
+        </div>
+        <div class="col-lg-3 ">
+          <img src="assets/img/salon2/hairCuts/img4.jpg" alt="">
+        </div>
+      
+        <div class="col-lg-3 mb-3">
+          <img src="assets/img/salon2/hairCuts/img5.jpg" alt="">
+        </div>
+        <div class="col-lg-3">
+          <img src="assets/img/salon2/hairCuts/img6.jpg" alt="">
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="nav-HairDyes" role="tabpanel" aria-labelledby="nav-HairDyes-tab">
+    <div class="container">
+    <div class="row">
+      
+      <div class="col-lg-3 mb-3">
+        <img src="assets/img/salon2/HairDyes/img1.jpg" alt="">
+      </div>
+      
+      <div class="col-lg-3 mb-3">
+        <img src="assets/img/salon2/HairDyes/img2.jpg" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img src="assets/img/salon2/HairDyes/img3.jpg" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img src="assets/img/salon2/HairDyes/img4.jpg" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img src="assets/img/salon2/HairDyes/img5.jpg" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img src="assets/img/salon2/HairDyes/img6.jpg" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img src="assets/img/salon2/HairDyes/img7.jpg" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img src="assets/img/salon2/HairDyes/img8.jpg" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img src="assets/img/salon2/HairDyes/img9.jpg" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img src="assets/img/salon2/HairDyes/img10.jpg" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img src="assets/img/salon2/HairDyes/img12.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="tab-pane fade" id="nav-shawlRolls" role="tabpanel" aria-labelledby="nav-shawlRolls-tab">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-lg-3 mb-3">
+          <img src="assets/img/salon2/shawlRolls/img1.jpg" alt="">
+        </div>
+        <div class="col-lg-3 mb-3">
+          <img src="assets/img/salon2/shawlRolls/img2.jpg" alt="">
+        </div>
+        <div class="col-lg-3 mb-3">
+          <img src="assets/img/salon2/shawlRolls/img3.jpg" alt="">
+        </div>
+        <div class="col-lg-3 mb-3">
+          <img src="assets/img/salon2/shawlRolls/img4.jpg" alt="">
+        </div>
+        <div class="col-lg-3 mb-3">
+          <img src="assets/img/salon2/shawlRolls/img5.jpg" alt="">
+        </div>
+        <div class="col-lg-3 mb-3">
+          <img src="assets/img/salon2/shawlRolls/img6.jpg" alt="">
+        </div>
+        <div class="col-lg-3 mb-3">
+          <img src="assets/img/salon2/shawlRolls/img7.jpg" alt="">
+        </div>
+        <div class="col-lg-3 mb-3">
+            <img src="assets/img/salon2/shawlRolls/img8.jpg" alt="">
+          </div>
+          <div class="col-lg-3 mb-3">
+            <img src="assets/img/salon2/shawlRolls/img9.jpg" alt="">
+          </div>
+          
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="nav-makeup" role="tabpanel" aria-labelledby="nav-makeup-tab">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-lg-3 mb-3">
+          <img src="assets/img/salon2/makeup/img1.jpg" alt="">
+        </div>
+        
+        <div class="col-lg-3 mb-3">
+          <img src="assets/img/salon2/makeup/img2.jpg" alt="">
+        </div>
+        <div class="col-lg-3 mb-3">
+          <img src="assets/img/salon2/makeup/img3.jpg" alt="">
+        </div>
+        <div class="col-lg-3 mb-3">
+          <img src="assets/img/salon2/makeup/img5.jpg" alt="">
+        </div>
+        <div class="col-lg-3 mb-3">
+          <img src="assets/img/salon2/makeup/img6.jpg" alt="">
+        </div>
+        <div class="col-lg-3 mb-3">
+            <img src="assets/img/salon2/makeup/img7.jpg" alt="">
+          </div>
+          <div class="col-lg-3 mb-3">
+            <img src="assets/img/salon2/makeup/img8.jpg" alt="">
+          </div>
+          <div class="col-lg-3 mb-3">
+            <img src="assets/img/salon2/makeup/img9.jpg" alt="">
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="nav-ManicuresAndNails" role="tabpanel" aria-labelledby="nav-ManicuresAndNails-tab">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-lg-3 mb-3">
+          <img src="assets/img/salon2/ManicuresAndNails/img1.jpg" alt="">
+        </div>
+        
+        <div class="col-lg-3 mb-3">
+          <img src="assets/img/salon2/ManicuresAndNails/img2.jpg" alt="">
+        </div>
+        <div class="col-lg-3 mb-3">
+          <img src="assets/img/salon2/ManicuresAndNails/img3.jpg" alt="">
+        </div>
+        <div class="col-lg-3 mb-3">
+          <img src="assets/img/salon2/ManicuresAndNails/img4.jpg" alt="">
+        </div>
+        <div class="col-lg-3 mb-3">
+          <img src="assets/img/salon2/ManicuresAndNails/img5.jpg" alt="">
+        </div>
+        <div class="col-lg-3 mb-3">
+          <img src="assets/img/salon2/ManicuresAndNails/img6.jpg" alt="">
+        </div>
+        <div class="col-lg-3 mb-3">
+          <img src="assets/img/salon2/ManicuresAndNails/img7.jpg" alt="">
+        </div>
+        <div class="col-lg-3 mb-3">
+            <img src="assets/img/salon2/ManicuresAndNails/img8.jpg" alt="">
+          </div>
+          <div class="col-lg-3 mb-3">
+            <img src="assets/img/salon2/ManicuresAndNails/img9.jpg" alt="">
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="nav-FaceAndEyebrowCleaning" role="tabpanel" aria-labelledby="nav-FaceAndEyebrowCleaning-tab">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-lg-3 mb-3">
+          <img src="assets/img/salon2/FaceAndEyebrowCleaning/img1.jpg" alt="">
+        </div>
+        
+        <div class="col-lg-3 mb-3">
+          <img src="assets/img/salon2/FaceAndEyebrowCleaning/img2.jpg" alt="">
+        </div>
+        <div class="col-lg-3 mb-3">
+          <img src="assets/img/salon2/FaceAndEyebrowCleaning/img3.jpg" alt="">
+        </div>
+        <div class="col-lg-3 mb-3">
+          <img src="assets/img/salon2/FaceAndEyebrowCleaning/img4.jpg" alt="">
+        </div>
+        <div class="col-lg-3 mb-3">
+            <img src="assets/img/salon2/FaceAndEyebrowCleaning/img5.jpg" alt="">
+          </div>
+          <div class="col-lg-3 mb-3">
+            <img src="assets/img/salon2/FaceAndEyebrowCleaning/img6.jpg" alt="">
+          </div>
+          <div class="col-lg-3 mb-3">
+            <img src="assets/img/salon2/FaceAndEyebrowCleaning/img7.jpg" alt="">
+          </div>
+          
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+ </div>
+ </section>
+ </body>
+ <!--footer-->
+ <footer class="footer bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="categories">
+          <h2 class="text-light my-5">categories</h2>
+          <ul class="list-group">
+            <li class=""><a href="#">Hair: Styles-Cuts-Dyes</a></li>
+            <li class=""><a href="#">shawl Rolls </a></li>
+            <li class=""><a href="#">makeup </a></li>
+            <li class=""><a href="#">Manicures and Nails </a></li>
+            <li class=""><a href="#">Face and Eyebrow Cleaning </a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="col-lg-3">
+       <div class="categories">
+         <h2 class="text-light my-5">help</h2>
+         <ul class="list-group">
+           <li class=""><a href="#">track order</a></li>
+           <li class=""><a href="#">returns</a></li>
+           <li class=""><a href="#">shipping</a></li>
+           <li class=""><a href="#">FAQs</a></li>
+         </ul>
+       </div>
+
+     </div>
+     <div class="col-lg-3">
+       <div class="getInTouch">
+         <h2 class="text-light my-5">get in touch</h2>
+         <p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879</p>
+         <ul class="">
+           <li class=""><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+           <li class=""><a href="#"><i class="fa fa-instagram"></i></a></li>
+           <li class=""><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+         </ul>
+       </div>
+
+     </div>
+     <div class="col-lg-3">
+       <div class="newsletter">
+         <h2 class="text-light my-5">newsletter</h2>
+         <form action="">
+           <input class="bg-dark" type="email" placeholder="email@example.com">
+           <button class="rounded-pill" type="submit">subscribe</button>
+         </form>
+         
+       </div>
+
+     </div>
+    </div>
+    <div class="footer-statment mt-3 text-center">
+    <div class="payment">
+      <img src="assets/img/payment/pay-01.webp" alt="">
+      <img src="assets/img/payment/pay-02.webp" alt="">
+      <img src="assets/img/payment/pay-03.webp" alt="">
+      <img src="assets/img/payment/pay-04.webp" alt="">
+      <img src="assets/img/payment/pay-05.webp" alt="">
+    </div>
+    <div class="copy my-3 pb-5">
+     Copyright 	&#169;2021 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#">Colorlib</a>
+    </div>
+   </div>
+  </div>
+</footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
